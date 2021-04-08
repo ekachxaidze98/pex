@@ -1,0 +1,93 @@
+.header-section {
+  background-image: url("../../../assets/images/bg1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  .menu-items{
+    border-bottom: 1px solid #614d61;
+    .nav-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .menu {
+        display: flex;
+        align-items: center;
+        nav {
+          ul{
+            display: flex;
+            list-style-type: none;
+            li{
+              padding: 30px 0;
+              transition: color 0.35s ease-in;
+              &:hover{
+                border-bottom: 1px solid white;
+              }
+              a{
+                text-decoration: none;
+                color: #fff;
+                margin: 0 15px;
+
+              }
+            }
+          }
+          @media only screen and (max-width: 885px) {
+            display: none;
+          }
+        }
+        .search{
+          position: relative;
+          input{
+            outline: none;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 20px;
+          }
+          i {
+            color: #b6b6b6;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            right: 5px;
+          }
+          @media only screen and (max-width: 400px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .main-section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    h1{
+      font-size: 50px;
+      color: #fff;
+      text-align: right;
+    }
+    a{
+      text-decoration: none;
+      color: #fff;
+      padding: 12px 30px;
+      background-color: #8824cd;
+      border-radius: 25px;
+      display: inline-block;
+      margin: 35px 0 15px 0;
+    }
+    span {
+      font-size: 12px;
+      color: #fff;
+    }
+    @media only screen and (max-width: 678px) {
+      width: 80%;
+    }
+  }
+}

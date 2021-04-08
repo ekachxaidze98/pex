@@ -1,0 +1,33 @@
+.service-section {
+  background-color: #2e3b4e;
+  padding: 60px 0;
+  position: relative;
+  .service-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px 40px;
+
+    .service-heading {
+      font-size: 15px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+    .service-text {
+      font-size: 15px;
+      color: #fff;
+      line-height: 27px;
+      font-weight: 100;
+    }
+  img{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  }
+}
+
+
+
